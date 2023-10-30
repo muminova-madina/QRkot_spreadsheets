@@ -4,7 +4,7 @@ from datetime import datetime
 from aiogoogle import Aiogoogle
 from app.core.config import settings
 
-FORMAT = "%Y/%m/%d %H:%M:%S"
+FORMAT = '%Y/%m/%d %H:%M:%S'
 TABLE_NAME = 'Отчет'
 SHEET_NAME = 'Рейтинг'
 
@@ -63,7 +63,7 @@ async def set_user_permissions(
         service.permissions.create(
             fileId=spreadsheet_id,
             json=permissions_body,
-            fields="id"
+            fields='id'
         ))
 
 
